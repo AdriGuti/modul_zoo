@@ -6,3 +6,7 @@ class zoo_zoo(models.Model):
     grandaria = fields.Char('Grandaria')     
     ciutat = fields.Char('Ciutat')   
     pais = fields.Text('País')
+
+    zoo_id = fields.Many2one('zoo.zoo',string='Zoo')
+
+    especie_id = fields.Many2one('zoo.especie',string='Especie')
